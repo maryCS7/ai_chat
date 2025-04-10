@@ -1,0 +1,17 @@
+# Ignore the .env file
+.env
+
+# Node.js
+node_modules/
+
+# Logs
+*.log
+
+# Mac-specific files
+.DS_Store
+
+# VS Code workspace settings
+.vscode/
+
+# System files
+Thumbs.db
