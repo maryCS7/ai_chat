@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat with AI</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 40px; }
+        .chat-container { margin-bottom: 20px; }
+        .message { margin-bottom: 10px; }
+        .user { color: blue; font-weight: bold; }
+        .ai { color: green; font-weight: bold; }
+    </style>
+</head>
+<body>
+    <h1>Ask AI</h1>
+    
+    <div class="chat-container">
+        {% if user_message and ai_response %}
+            <div class="message">
+                <span class="user">You:</span> {{ user_message }}
+            </div>
+            <div class="message">
+                <span class="ai">AI:</span> {{ ai_response }}
+            </div>
+        {% endif %}
+    </div>
+    <form action="/chat" method="POST">
+        <form action="/chat" method="POST">
+            <textarea 
+                style="width: 400px; 
+                       height: 80px; 
+                       padding: 8px; 
+                       box-sizing: border-box; 
+                       vertical-align: top; 
+                       line-height: 1.2; 
+                       resize: none;" 
+                name="user_message" 
+                placeholder="What ya wanna know?" 
+                required></textarea>
+            <button type="submit">Send</button>
+    </form>    
+</body>
+</html>
