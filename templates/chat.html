@@ -13,7 +13,7 @@
     </style>
 </head>
 <body>
-    <h1>Ask AI</h1>
+    <h1>Ask AI Anything 🤖</h1>
     
     <div class="chat-container">
         {% if user_message and ai_response %}
@@ -25,20 +25,20 @@
             </div>
         {% endif %}
     </div>
+
     <form action="/chat" method="POST">
-        <form action="/chat" method="POST">
-            <textarea 
-                style="width: 400px; 
-                       height: 80px; 
-                       padding: 8px; 
-                       box-sizing: border-box; 
-                       vertical-align: top; 
-                       line-height: 1.2; 
-                       resize: none;" 
-                name="user_message" 
-                placeholder="What ya wanna know?" 
-                required></textarea>
-            <button type="submit">Send</button>
-    </form>    
+        <textarea 
+            style="width: 400px; 
+                   height: 80px; 
+                   padding: 8px; 
+                   box-sizing: border-box; 
+                   vertical-align: top; 
+                   line-height: 1.2; 
+                   resize: none;" 
+            name="user_message" 
+            placeholder="Type your question, concern, or random thought. I promise I won't judge!" 
+            required></textarea>
+        <button type="submit">Go Ahead, Click Me!</button>
+    </form>
 </body>
 </html>
